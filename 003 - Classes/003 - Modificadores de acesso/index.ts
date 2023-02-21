@@ -12,6 +12,8 @@ class Pessoa {
   public nome: string = "";
   public idade: number = 0;
 
+  private _profissao: string = "Programador";
+
   constructor(nome: string, idade: number) {
     this.nome = nome;
     this.idade = idade;
