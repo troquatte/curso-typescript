@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2022" /* Definir a versão da linguagem JavaScript e inclui declarações de biblioteca compatíveis. */,
+    "module": "CommonJS" /* Especifique qual código de módulo é gerado. */,
+    "baseUrl": "./" /* Especifique o diretório base para resolver nomes de módulos não relativos. */,
+    "outDir": "./dist" /* Especifique uma pasta de saída para todos os arquivos emitidos. */,
+
+    // Back-end caso queira utilizar no front tbm pode.
+    "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
+    "sourceMap": true /* Crie arquivos de mapa de origem para arquivos JavaScript emitidos. */,
+
+    "forceConsistentCasingInFileNames": true /* Assegure-se de que as maiúsculas e minúsculas estejam corretas nas importações. */,
+    "strict": true /* Habilite todas as opções rígidas de verificação de tipo. */,
+    "noImplicitOverride": true /* Certifique-se de que os membros de substituição em classes derivadas sejam marcados com um modificador de substituição. */,
+    "noPropertyAccessFromIndexSignature": true /* Aplica o uso de acessadores indexados para chaves declaradas usando um tipo indexado. */,
+    "noImplicitReturns": true /* Habilite o relatório de erros para codepaths que não retornam explicitamente em uma função. */,
+    "noFallthroughCasesInSwitch": true /* Habilite o relatório de erros para casos de fallthrough em instruções switch. */,
+    "downlevelIteration": true /* Emita JavaScript mais compatível, mas detalhado e com menos desempenho para iteração. */,
+    "emitDecoratorMetadata": true /* Emite metadados de tipo de design para declarações decorators em arquivos de origem. */,
+    "experimentalDecorators": true /* Ative o suporte experimental para decorators de rascunho do estágio 2 do TC39. */,
+    "moduleResolution": "node" /* Especifique como o TypeScript procura um arquivo de um determinado especificador de módulo. */,
+    "importHelpers": true /* Permitir a importação de funções auxiliares de tslib uma vez por projeto, em vez de incluí-las por arquivo. */,
+    "useDefineForClassFields": true /* Emita campos de classe compatíveis com o padrão ECMAScript. */,
+    "removeComments": true /* Desative a emissão de comentários. */,
+    "allowSyntheticDefaultImports": true /* Permita 'importar x de y' quando um módulo não tiver uma exportação padrão. */,
+    "skipLibCheck": true /* Ignore a verificação de tipo de todos os arquivos .d.ts. */,
+    "strictNullChecks": true /* Ao verificar o tipo, leve em consideração 'nulo' e 'indefinido'. */,
+    "noImplicitAny": true /* Habilite o relatório de erros para expressões e declarações com um tipo 'qualquer' implícito. */,
+    "esModuleInterop": true /* Emita JavaScript adicional para facilitar o suporte à importação de módulos CommonJS. Isso habilita 'allowSyntheticDefaultImports' para compatibilidade de tipo. */
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "./dist"],
+  "lib": ["ES2022", "dom"]
+}
