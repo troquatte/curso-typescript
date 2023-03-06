@@ -1,17 +1,21 @@
 {
   "name": "modelo-de-aula",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
+  "description": "",
   "scripts": {
     "build": "npx tsc --build",
+    "start:dev": "tsx ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
   "devDependencies": {
-    "typescript": "^4.9.5"
+    "@types/inquirer": "^9.0.3",
+    "tsx": "^3.12.3"
   }
 }
