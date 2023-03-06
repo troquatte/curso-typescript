@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2022" /* Definir a versão da linguagem JavaScript e inclui declarações de biblioteca compatíveis. */,
-    "module": "CommonJS" /* Especifique qual código de módulo é gerado. */,
+
+    //Nodule para o NodeJs: node16 ou CommonJS"
+    //Nodule para o Fron-end: ES2022"
+    "module": "Node16" /* Especifique qual código de módulo é gerado. */,
+
+    // Arquivos
     "baseUrl": "./" /* Especifique o diretório base para resolver nomes de módulos não relativos. */,
     "outDir": "./dist" /* Especifique uma pasta de saída para todos os arquivos emitidos. */,
 
@@ -18,7 +23,7 @@
     "downlevelIteration": true /* Emita JavaScript mais compatível, mas detalhado e com menos desempenho para iteração. */,
     "emitDecoratorMetadata": true /* Emite metadados de tipo de design para declarações decorators em arquivos de origem. */,
     "experimentalDecorators": true /* Ative o suporte experimental para decorators de rascunho do estágio 2 do TC39. */,
-    "moduleResolution": "node" /* Especifique como o TypeScript procura um arquivo de um determinado especificador de módulo. */,
+    "moduleResolution": "node16" /* Especifique como o TypeScript procura um arquivo de um determinado especificador de módulo. */,
     "importHelpers": true /* Permitir a importação de funções auxiliares de tslib uma vez por projeto, em vez de incluí-las por arquivo. */,
     "useDefineForClassFields": true /* Emita campos de classe compatíveis com o padrão ECMAScript. */,
     "removeComments": true /* Desative a emissão de comentários. */,
@@ -30,5 +35,5 @@
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "./dist"],
-  "lib": ["ES2022", "dom"]
+  "lib": ["ES2022"]
 }
